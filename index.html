@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Vue.js入門 演習問題</h1>
+  <h2>3. リアルタイム検索</h2>
+  <div id="app">
+    <input type="text" v-model="keyword">
+    <table>
+      <tr v-for="user in filteredUsers" :key="user.id">
+          <td v-text="user.name"></td>
+      </tr>
+    </table>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
